@@ -20,8 +20,4 @@ function poshPeople(names){
 
 console.log(poshPeople("ajala"))
 console.log(AbdulrahmonIsHere)
-<<<<<<< HEAD
-console.log(AyoIsLovely)
-=======
 console.log(poshPeople("Honorwale"))
->>>>>>> a2e3acb6eb946a530cc85b18aa50bd9258fe0feb
