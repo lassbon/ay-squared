@@ -7,3 +7,5 @@ function poshPeople(address){
         }
     })
 }
+
+console.log(GamepadHapticActuator)
