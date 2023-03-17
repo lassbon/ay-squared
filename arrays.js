@@ -7,3 +7,13 @@ newArr.map(function (item) {
 newArr.filter(function (item) { 
     return item % 2 === 0;
 });
+
+function poshPeople(names){
+    names.forEach (function (name){
+        if (name.includes(p)){
+            return `Hi ${name}, you are simply Posh!`
+        } else{
+            return `Sorry, chop L`
+        }
+    })
+}
