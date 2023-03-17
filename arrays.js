@@ -17,3 +17,5 @@ function poshPeople(names){
         }
     })
 }
+
+console.log(poshPeople("ajala"))
