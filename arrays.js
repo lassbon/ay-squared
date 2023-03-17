@@ -19,5 +19,5 @@ function poshPeople(names){
 }
 
 console.log(poshPeople("ajala"))
-console.log(AbdulrahmonIsHere)
-console.log(poshPeople("niyi"))
+console.log(poshPeople("Honorwale"))
+
