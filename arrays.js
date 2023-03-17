@@ -20,4 +20,5 @@ function poshPeople(names){
 
 console.log(poshPeople("ajala"))
 console.log(poshPeople("toyinishere"))
+console.log(poshPeople("Niyi Olumie is Folarin"))
 console.log(poshPeople("aysq"))
