@@ -20,4 +20,4 @@ function poshPeople(names){
 
 console.log(poshPeople("ajala"))
 console.log(AbdulrahmonIsHere)
-console.log(niyiIshere)
+console.log(poshPeople("niyi"))
