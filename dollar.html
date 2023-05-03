@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dollar to Naira Converter</title>
+  </head>
+  <body>
+    <h1>Dollar to Naira Converter</h1>
+    <p>Enter the dollar amount to convert:</p>
+    <input type="number" id="dollars" name="dollars" min="0" step="0.01">
+    <br><br>
+    <button onclick="convert()">Convert</button>
+    <p id="result"></p>
+    
+    <script>
+      function convert() {
+        var dollars = document.getElementById("dollars").value;
+        var naira = dollars * 411.29; //assuming 1 dollar = 411.29 naira (as of April 2023)
+        document.getElementById("result").innerHTML = dollars + " dollar(s) = " + naira.toFixed(2) + " naira";
+      }
+    </script>
+  </body>
+</html>
+cosole.log(convert(50))

@@ -1,0 +1,9 @@
+console.log('wale')
+fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
+.then((result)=>{
+    console.log(result)
+})
+.catch((error)=>{
+    console.log(error)
+})
+console.log('Ade')

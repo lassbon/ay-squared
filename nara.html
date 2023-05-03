@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dollar to Naira Converter</title>
+  </head>
+  <body>
+    <h1>Welcome to Ramoney</h1>
+    <p><h3>Ramoney is a place to know the latest conversion rate of Dollar to Naira</h3></p>
+    <h2>Forex/CBN Rate</h2>
+    <p>Enter the dollar amount to convert:</p>
+    <input type="number" id="dollars" name="dollars" min="0" step="0.01">
+    <br><br>
+    <button onclick="convert1()">Convert</button>
+    <p id="result"></p>
+
+    <h2>BlackMarket/Aboki Rate</h2>
+    <p>Enter the dollar amount to convert:</p>
+    <input type="number" id="dollar" name="dollar" min="0" step="0.01">
+    <br><br>
+    <button onclick="convert2()">Convert</button>
+    <p id="results"></p>
+    
+    <script>
+      function convert1() {
+        var dollars = document.getElementById("dollars").value;
+        var url = "https://api.exchangerate-api.com/v4/latest/USD"; // replace with your preferred API endpoint
+        
+        fetch(url)
+          .then(response => response.json())
+          .then(data => {
+            var naira = dollars * data.rates.NGN;
+            document.getElementById("result").innerHTML = dollars + " dollar(s) = " + naira.toFixed(10) + " naira";
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      }
+        function convert2() {
+          var dollar = document.getElementById("dollar").value;
+          var nairas = dollar * 734.2143906; //assuming 1 dollar = 411.29 naira (as of April 2023)
+          document.getElementById("results").innerHTML = dollar + " dollar(s) = " + nairas.toFixed(10) + " naira";
+        }
+      </script>
+  </body>
+</html>
